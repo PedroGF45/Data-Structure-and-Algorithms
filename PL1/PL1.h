@@ -1,0 +1,14 @@
+//
+// Created by Pedro Brito on 08/02/2023.
+//
+
+#ifndef DATA_STRUCTURE_AND_ALGORITHMS_PL1_H
+#define DATA_STRUCTURE_AND_ALGORITHMS_PL1_H
+
+
+class PL1 {
+
+};
+
+
+#endif //DATA_STRUCTURE_AND_ALGORITHMS_PL1_H

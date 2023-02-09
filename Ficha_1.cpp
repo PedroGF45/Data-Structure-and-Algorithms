@@ -19,7 +19,19 @@ void ex_1_2_3(){
     //cout << "6. Adicionar mecanismos de segurança" << endl; # How to comment a line
 }
 
+// Exercise 4
+void ex_4() {
+    cout << "7 + 2 = " << 7 + 2 << endl;
+    cout << "7 - 2 = " << 7 - 2 << endl;
+    cout << "7 * 2 = " << 7 * 2 << endl;
+    cout << "7 / 2 = " << 7 / 2 << endl;
+    cout << "7.0 / 2.0 = " << 7.0 / 2.0 << endl;
+    cout << "7 % 2 = " << 7 % 2 << endl;
+    cout << "7 + 2 * 5 = " << 7 + 2 * 5 << endl;
+    cout << "(7 + 2) * 5 = " << (7 + 2) * 5 << endl;
+}
+
 int main(){
-    ex_1_2_3();
+    ex_4();
     return 0;
 }

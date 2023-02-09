@@ -42,7 +42,22 @@ void ex_5() {
     cout << n1 << " a dividir por 2 da " << n2 << " e o resto da " << n3 << endl;
 }
 
+#include <cmath>
+// Exercise 6
+void ex_6() {
+    cout << "Write the radius of the circle:";
+
+    int r;
+    cin >> r;
+
+    const float PI = 3.14;
+    float area = PI * pow(r, 2);
+    float volume = (4.0 / 3.0) * PI * pow(r, 3);
+
+    cout << "Area of circle is " << area << " and its volume is " << volume << endl;
+}
+
 int main(){
-    ex_5();
+    ex_6();
     return 0;
 }

@@ -42,7 +42,7 @@ void ex_5() {
     cout << n1 << " a dividir por 2 da " << n2 << " e o resto da " << n3 << endl;
 }
 
-#include <cmath>
+#include <cmath> // to use the pow function
 // Exercise 6
 void ex_6() {
     cout << "Write the radius of the circle:";
@@ -57,7 +57,30 @@ void ex_6() {
     cout << "Area of circle is " << area << " and its volume is " << volume << endl;
 }
 
+// Exercise 7
+void ex_7() {
+    /*cout << "Write your first name:";
+    string first_name;
+    cin >> first_name;
+    cout << "Write your last name:";
+    string last_name;
+    cin >> last_name;
+    string full_name = first_name + " " + last_name;*/
+
+    // or using getline function
+    cout << "Write your first and lat name";
+    string full_name;
+    getline(cin, full_name);
+
+    cout << "Now write your age";
+    int age;
+    cin >> age;
+    int birth_date = 2023 - age;
+
+    cout << "Hi " << full_name << "!" << " You were born on " << birth_date << "." << endl;
+}
+
 int main(){
-    ex_6();
+    ex_7();
     return 0;
 }

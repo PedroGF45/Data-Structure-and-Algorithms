@@ -7,7 +7,7 @@ using namespace std;
 
 // Exercise 1, 2 and 3
 // Void doesn't return any value to main
-void ex1(){
+void ex_1_2_3(){
     //Add special characters ""
     locale::global(locale(""));
     cout << "Os passos para o desenvolvimento de SW seguro são: tendo em conta a seguranca." << endl;
@@ -20,6 +20,6 @@ void ex1(){
 }
 
 int main(){
-    ex1();
+    ex_1_2_3();
     return 0;
 }

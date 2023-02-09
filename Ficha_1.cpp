@@ -31,7 +31,18 @@ void ex_4() {
     cout << "(7 + 2) * 5 = " << (7 + 2) * 5 << endl;
 }
 
+// Exercise 5
+void ex_5() {
+    int n1;
+    cout << "Give me a number: " << endl;
+    cin >> n1;
+    int n2 = n1 / 2;
+    int n3 = n1 % n2;
+
+    cout << n1 << " a dividir por 2 da " << n2 << " e o resto da " << n3 << endl;
+}
+
 int main(){
-    ex_4();
+    ex_5();
     return 0;
 }

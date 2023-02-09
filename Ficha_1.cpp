@@ -5,7 +5,7 @@
 #include <locale>
 using namespace std;
 
-// Exercise 1
+// Exercise 1, 2 and 3
 // Void doesn't return any value to main
 void ex1(){
     //Add special characters ""

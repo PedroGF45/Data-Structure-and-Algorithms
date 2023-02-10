@@ -45,7 +45,16 @@ int factorial(int n) {
         return n * factorial(n - 1);
 }
 
+// fahrenheit to celsius
+int ftoc(int under_limit, int upper_limit) {
+    int temp = under_limit;
+    while (temp <= upper_limit) {
+        cout << temp << '\t' << 5.0/9.0 * ( temp - 32) << endl;
+        temp += 20;
+    }
+}
+
 int main() {
-    cout << factorial(5);
+    ftoc(20, 300);
     return 0;
 }

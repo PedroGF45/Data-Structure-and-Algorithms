@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-void temp() {
+/*void temp() {
     int inferior = 0;
     int superior = 300;
     int passo = 20;
@@ -17,16 +17,16 @@ void temp() {
         cout << "Temp_F: " << temp_f << " Temp_C: " << temp_c << endl;
         temp_f = temp_f + passo;
     }
-}
+}*/
 
-void testf(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     std::cout << argc;
     std::cout << "O primeiro argumento do programa é : " << argv[0] << std::endl;
     std::cout << "O segundo é :" << argv[1] << std::endl;
     std::cout << "O terceiro é : " << argv[2] << std::endl;
 }
 
-int main() {
+/*int main() {
     testf();
     return 0;
-}
+}*/

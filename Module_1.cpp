@@ -54,7 +54,16 @@ int ftoc(int under_limit, int upper_limit) {
     }
 }
 
+// cout a table using previous built factorial function
+int factorialTable(int n, int upper_limit){
+    int i = n;
+    while (i <= upper_limit) {
+        cout << factorial(i) << endl;
+        i += 1;
+    }
+}
+
 int main() {
-    ftoc(20, 300);
+    factorialTable(1, 30);
     return 0;
 }

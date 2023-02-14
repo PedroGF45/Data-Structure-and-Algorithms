@@ -25,8 +25,24 @@ void prato(int valor) {
     cout << acumulado << endl;
 }
 
+int contador() {
+    int conta = 0;
+    conta++;
+    return conta;
+}
+
+int contadorStatic() {
+    static int conta = 0;
+    conta++;
+    return conta;
+}
+
 int main() {
-    sopa(10);
-    prato(5);
+    cout << contador() << endl; // 1
+    cout << contador() << endl; // 1 again, because, conta is defined to 0 once again
+    cout << contador() << endl; // 1 and again
+    cout << contadorStatic() << endl; // 1
+    cout << contadorStatic() << endl; // 2 because conta is static and stores the value
+    cout << contadorStatic() << endl; // 3 stores the value 2 and increments by 1
     return 0;
 }

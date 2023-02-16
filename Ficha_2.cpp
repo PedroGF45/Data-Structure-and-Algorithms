@@ -25,7 +25,15 @@ void ex1() {
     cout << "y *= 2 \ny = " << y << endl; // 8
 }
 
+void ex2(int n) {
+    int factorial = 1;
+    for (int j = 1; j <= n; j++) {
+        factorial *= j;
+        cout << factorial << endl;
+    }
+}
+
 int main() {
-    ex1();
+    ex2(10);
     return 0;
 }

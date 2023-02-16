@@ -60,6 +60,25 @@ void imprimeMultiplos(int valor, int limite) {
     }
 }
 
+// break and continue purpose
+void breakf (int valor_1, int valor_2, int limite) {
+    for (int i = 10; i < limite; i++) {
+        if (i % valor_1 == 0 && i % valor_2 == 0) {
+            cout << i << " multiplo de " << valor_1 << "e multiplo de " << valor_2;
+            break; // with break, the function will find the first number and break the cicle
+        }
+    }
+}
+
+void continuef (int valor_1, int valor_2, int limite) {
+    for (int i = 10; i < limite; i++) {
+        if (i % valor_1 == 0 && i % valor_2 == 0) {
+            continue; // with continue, the function will stop the current iteration and continue to the next iteration
+        }
+        cout << i << " nao multiplo de " << valor_1 << "e nao multiplo de " << valor_2 << endl;
+    }
+}
+
 int main() {
-    imprimeMultiplos(5, 1000);
+    continuef(5,7, 1000);
 }

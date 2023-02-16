@@ -52,6 +52,14 @@ int doWhile (int i) {
     while (i < 20);
 }
 
+// for statements
+void imprimeMultiplos(int valor, int limite) {
+    for (int i = 0; i < limite; i++) {
+        if (i % valor == 0)
+            cout << i << " multiplo de" << valor << endl;
+    }
+}
+
 int main() {
-    doWhile(5);
+    imprimeMultiplos(5, 1000);
 }

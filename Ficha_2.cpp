@@ -41,7 +41,7 @@ void ex2(int n) {
 }
 
 // Exercise 3
-void ex3(int n) {
+void ex3(int n) { // n is 10
     int factorial = 1;
     for (int j = 1; j <= n; j++) {
         factorial *= j;
@@ -49,7 +49,16 @@ void ex3(int n) {
     }
 }
 
+// Exercise 4
+void ex4(int n) { // n is 30
+    long double factorial = 1; // need to assign the types long and double to get these values
+    for (int j = 1; j <= n; j++) {
+        factorial *= j;
+        cout << factorial << endl;
+    }
+}
+
 int main() {
-    ex2(10);
+    ex4(30);
     return 0;
 }

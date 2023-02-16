@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <locale>
+#include <string>
 using namespace std;
 
 // Exercise 1
@@ -76,7 +77,26 @@ void ex5() {
     cout << "MDC de a e b " << mdc(a, b);
 }
 
-int main() {
-    ex5();
-    return 0;
+// Exercise 6
+bool paridade(int n) {
+    if (n % 2 == 0)
+        return "par";
+    else
+        return "impar";
+}
+
+void ex6(int x) {
+    cout << paridade(x);
+}
+
+int main(int argc, char*argv[]) {
+    int x;
+    if (argc == 2) {
+        x = stoi(argv[1]); // transforms strings into int
+    } else {
+        cout << "Insira um numero inteiro: ";
+        cin >> x;
+    }
+    ex6(x);
+    return 0
 }

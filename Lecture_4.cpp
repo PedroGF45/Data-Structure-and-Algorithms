@@ -79,6 +79,33 @@ void continuef (int valor_1, int valor_2, int limite) {
     }
 }
 
+// uses a copy of the value
+void trocaCopy(int a, int b) {
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+/*
 int main() {
-    continuef(5,7, 1000);
+    int a = 2;
+    int b = 3;
+    trocaCopy(a, b); // makes the change on that function copying the values of the variables
+    cout << "a" << a << "b" << b; // but in main the values are still the same
+}
+*/
+
+// uses a copy of the value
+void trocaReference(int *a, int *b) {
+    int temp;
+    temp = *a;
+    *a = *b; // the references of the memory position of the variables are changed
+    *b = temp;
+}
+
+int main() {
+    int a = 2;
+    int b = 3;
+    trocaReference(&a, &b); // makes the change on that function referencing the memory of the variables
+    cout << "a" << a << "b" << b; //
 }

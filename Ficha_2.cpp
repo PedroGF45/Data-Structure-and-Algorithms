@@ -2,6 +2,7 @@
 // Created by Brito on 14/02/2023.
 //
 #include <iostream>
+#include <locale>
 using namespace std;
 
 // Exercise 1
@@ -58,7 +59,24 @@ void ex4(int n) { // n is 30
     }
 }
 
+// Exercise 5
+int mdc(int a, int b) {
+    while (b != 0) {
+        int r = a % b;
+        a = b;
+        b = r;
+    }
+    return a;
+}
+
+void ex5() {
+    int a, b;
+    cout << "Give me the number for a and b: ";
+    cin >> a >> b;
+    cout << "MDC de a e b " << mdc(a, b);
+}
+
 int main() {
-    ex4(30);
+    ex5();
     return 0;
 }

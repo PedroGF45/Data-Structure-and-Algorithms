@@ -14,8 +14,31 @@ int ifstatement(int valor) {
     }
 }
 
+/*
+int idade = 4;
+int switchcases(int idade) {
+    case 10:
+        cout << "Crianca";
+        break;
+    case 20:
+        cout << "Adulto";
+        break;
+    case 60:
+        cout << "Idoso";
+        break;
+    default:
+        cout << "Valores restantes";
+        break;
+}*/
 
+int iteration (int i) {
+    while (i < 20) {
+        if (i % 2 == 0)
+            cout << i << "Par" << endl;
+        i++;
+    }
+}
 
 int main() {
-    ifstatement(0);
+    iteration(5);
 }

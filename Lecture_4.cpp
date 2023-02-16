@@ -4,6 +4,7 @@
 #include "iostream"
 using namespace std;
 
+// if statements
 int ifstatement(int valor) {
     if (valor > 5){
         cout << "Welcome";
@@ -14,7 +15,7 @@ int ifstatement(int valor) {
     }
 }
 
-/*
+/* // case statements
 int idade = 4;
 int switchcases(int idade) {
     case 10:
@@ -31,6 +32,7 @@ int switchcases(int idade) {
         break;
 }*/
 
+// while statements
 int iteration (int i) {
     while (i < 20) {
         if (i % 2 == 0)
@@ -39,6 +41,16 @@ int iteration (int i) {
     }
 }
 
+// do while statements
+int doWhile (int i) {
+    do { // will execute at still one time
+        if (i % 2 == 0)
+            cout << i << " Par" << endl;
+        i++;
+    }
+    while (i < 20);
+}
+
 int main() {
-    iteration(5);
+    doWhile(5);
 }

@@ -90,6 +90,7 @@ void ex6(int x) {
     }
 }
 
+/*
 int main(int argc, char*argv[]) {
     int x;
     if (argc == 2) {
@@ -99,5 +100,29 @@ int main(int argc, char*argv[]) {
         cin >> x;
     }
     ex6(x);
+    return 0;
+}*/
+
+// Exercise 7
+bool bissexto(int n) {
+    return ((n % 400 == 0) || ((n % 4 == 0) && (n % 100 != 0)));
+}
+
+void ex7(int x) {
+    if (bissexto(x))
+        cout << "Ano bissexto";
+    else
+        cout << "Ano nao bissexto";
+}
+
+int main(int argc, char*argv[]) {
+    int x;
+    if (argc == 2) {
+        x = stoi(argv[1]); // transforms strings into int
+    } else {
+        cout << "Insira um ano: ";
+        cin >> x;
+    }
+    ex7(x);
     return 0;
 }

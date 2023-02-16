@@ -15,22 +15,23 @@ int ifstatement(int valor) {
     }
 }
 
-/* // case statements
-int idade = 4;
+// switch statements
 int switchcases(int idade) {
-    case 10:
-        cout << "Crianca";
-        break;
-    case 20:
-        cout << "Adulto";
-        break;
-    case 60:
-        cout << "Idoso";
-        break;
-    default:
-        cout << "Valores restantes";
-        break;
-}*/
+    switch(idade) {
+        case 10:
+            cout << "Crianca";
+            break;
+        case 20:
+            cout << "Adulto";
+            break;
+        case 60:
+            cout << "Idoso";
+            break;
+        default:
+            cout << "Valores restantes";
+            break;
+    }
+}
 
 // while statements
 int iteration (int i) {

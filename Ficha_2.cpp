@@ -79,14 +79,15 @@ void ex5() {
 
 // Exercise 6
 bool paridade(int n) {
-    if (n % 2 == 0)
-        return "par";
-    else
-        return "impar";
+    return n % 2 == 0;
 }
 
 void ex6(int x) {
-    cout << paridade(x);
+    if (paridade(x)) {
+        cout << "Numero par";
+    } else {
+        cout << "Numero impar";
+    }
 }
 
 int main(int argc, char*argv[]) {
@@ -98,5 +99,5 @@ int main(int argc, char*argv[]) {
         cin >> x;
     }
     ex6(x);
-    return 0
+    return 0;
 }

@@ -25,7 +25,7 @@ void ex1() {
     cout << "y *= 2 \ny = " << y << endl; // 8
 }
 
-void ex2(int n) {
+void ex3(int n) {
     int factorial = 1;
     for (int j = 1; j <= n; j++) {
         factorial *= j;

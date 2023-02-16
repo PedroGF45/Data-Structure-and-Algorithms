@@ -25,6 +25,19 @@ void ex1() {
     cout << "y *= 2 \ny = " << y << endl; // 8
 }
 
+int factorial(int n) {
+    if (n == 1)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+void ex2(int n) {
+    for(int i = 1; i <= n; i++) { // for each value prints its factorial
+        cout << factorial(i) << endl;
+    }
+}
+
 void ex3(int n) {
     int factorial = 1;
     for (int j = 1; j <= n; j++) {

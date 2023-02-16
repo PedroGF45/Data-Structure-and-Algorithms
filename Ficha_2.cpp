@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+// Exercise 1
 void ex1() {
     int x = 1;
     cout << "x = " << x << endl; // 1
@@ -25,6 +26,7 @@ void ex1() {
     cout << "y *= 2 \ny = " << y << endl; // 8
 }
 
+// Exercise 2
 int factorial(int n) {
     if (n == 1)
         return 1;
@@ -38,6 +40,7 @@ void ex2(int n) {
     }
 }
 
+// Exercise 3
 void ex3(int n) {
     int factorial = 1;
     for (int j = 1; j <= n; j++) {

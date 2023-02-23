@@ -7,8 +7,9 @@ using namespace std;
 
 void inserirDados(int v[], int tamanho) {
     for (int i = 0; i < tamanho; i++) {
-        cout << "Insira um dado: " << endl;
-        cin >> v[i];
+        //cout << "Insira um numero inteiro: " << endl;
+        //cin >> v[i];
+        v[i] = i + 1;
     }
 }
 
@@ -61,4 +62,12 @@ int posicaoValorMin(int v[], int tamanho) {
         }
     }
     return min_Indice;
+}
+
+void randomize(int v[], int tamanho){
+    srand(time(0));
+    for (int i = tamanho - 1; i > 0; i--){
+        int j = rand() % (i + 1);
+        troca(v[i], v[j]);
+    }
 }

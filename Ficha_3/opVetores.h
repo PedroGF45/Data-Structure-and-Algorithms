@@ -13,5 +13,6 @@ float media(int v[], int tamanho);
 void inverterVetor(int v[], int tamanho);
 int posicaoValorMax(int v[], int tamanho);
 int posicaoValorMin(int v[], int tamanho);
+void randomize(int v[], int tamanho);
 
 #endif //DATA_STRUCTURE_AND_ALGORITHMS_OPVETORES_H

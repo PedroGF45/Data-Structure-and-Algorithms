@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+/*
 void dump(int len, int a[]){
     cout << "sizeof(a) =" << sizeof(a) << endl; // 8 or 4 depends on the system architecture
     cout << "sizeof(a[0]) =" << sizeof(a[0]) << endl; // 4 bites (int_size)
@@ -19,4 +20,24 @@ int main() {
     cout << "sizeof(pv) =" << sizeof(pv) << endl; // (64 bits (system_architecture) / 8) = 8 bites
     dump(sizeof(v)/ sizeof(v[0]), pv); // dump (36 /9, pv)
     // instead of pv, if we put v the values would be the same
+}*/
+
+int main() {
+    int tam_turma = 0;
+    cout << "Indique o tamanho da turma: ";
+    cin >> tam_turma;
+    int *turma = new int[tam_turma]; // Dynamic memory allocation
+
+    for (int i = 0; i < tam_turma; i ++) {
+        cout << "Indique o Nome de aluno " << i << ":";
+        cin >> turma[i];
+    }
+
+    cout << "Dados da turma \n";
+    for (int i = 0; i < tam_turma; i++) {
+        cout << "Aluno " << i << " :" << turma[i] << endl;
+    }
+
+    //gravaAlunos( turma, tam_turma); need to use the tam_turma because there's no other way to know the length
+    return 0;
 }

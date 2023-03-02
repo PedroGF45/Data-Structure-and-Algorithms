@@ -17,8 +17,8 @@ int main(){
     if (tamanho > 0 && tamanho <= NUM_ELEMENTOS){
         char opcao;
         cout << "\nEscolha uma opcao:\n";
-        cout << "1 - Valores reais" << endl;
-        cout << "2 - Valores inteiros" << endl;
+        cout << "1 - Valores reais\n";
+        cout << "2 - Valores inteiros\n";
         cin >> opcao;
         cout << endl;
         switch (opcao) {

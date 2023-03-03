@@ -8,14 +8,19 @@ using namespace std;
 #include "opTreino.h"
 
 int main() {
-    // definition of constants
-    const int ATLETAS = 5;
-    const int SESSOES = 7;
+
+    // get number of athletes and sessions from user
+    int athletes = 0;
+    int sessions = 0;
+    cout << "Write the number of the athletes:" << endl;
+    cin >> athletes;
+    cout << "Writhe the number of sessions:" << endl;
+    cin >> sessions;
 
     // allocation of the tempos matrix
-    float **tempos = new float *[SESSOES];
-    for(int i = 0; i < SESSOES; i++){
-        tempos[i] = new float[ATLETAS];
+    float **tempos = new float *[sessions];
+    for(int i = 0; i < sessions; i++){
+        tempos[i] = new float[athletes];
     }
 
     bool sair = false;
@@ -35,22 +40,22 @@ int main() {
 
         switch (opcao) {
             case '1':
-                inserirTempos(tempos, ATLETAS, SESSOES);
+                inserirTempos(tempos, athletes, sessions);
                 break;
             case '2':
-                escreveMediaColunas(tempos, ATLETAS, SESSOES);
+                escreveMediaColunas(tempos, athletes, sessions);
                 break;
             case '3':
-                escreveMinLinhas(tempos, ATLETAS, SESSOES);
+                escreveMinLinhas(tempos, athletes, sessions);
                 break;
             case '4':
-                showMatrix(tempos, ATLETAS, SESSOES);
+                showMatrix(tempos, athletes, sessions);
                 break;
             case '0':
                 cout << "Adeus!" << endl;
                 sair = true;
                 //delete allocated memory
-                for (int i = 0; i < ATLETAS;i++) {
+                for (int i = 0; i < athletes;i++) {
                     delete[] tempos[i];
                 }
                 delete[] tempos;

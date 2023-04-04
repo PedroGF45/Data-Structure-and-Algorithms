@@ -3,7 +3,7 @@
 //
 #ifndef DATA_STRUCTURE_AND_ALGORITHMS_OPVETORESFLOAT_H
 #define DATA_STRUCTURE_AND_ALGORITHMS_OPVETORESFLOAT_H
-#include "opVetoresFloat.cpp"
+
 //operações com vetores de float
 
 void inserirDadosFloat(float v[], int tamanho);

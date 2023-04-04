@@ -6,10 +6,12 @@
 
 #include "opTreino.cpp"
 
-void inserirTempos (float tempos[][], int atletas, int sessoes);
+void inserirTempos (float **tempos, int atletas, int sessoes);
 
-void escreveMediaColunas(float tempos[][], int atletas, int sessoes);
+void escreveMediaColunas(float **tempos, int atletas, int sessoes);
 
-void escreveMinLinhas(float tempos[][], int atletas, int sessoes);
+void escreveMinLinhas(float **tempos, int atletas, int sessoes);
+
+void showMatrix(float ** tempos, int atletas, int sessoes);
 
 #endif //DATA_STRUCTURE_AND_ALGORITHMS_OPTREINO_H

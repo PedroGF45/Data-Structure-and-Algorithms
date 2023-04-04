@@ -46,9 +46,9 @@ int main() {
                 cout << "Adeus" << endl;
                 sair = true;
                 break;
+            default:
+                cout << "Introduziu uma opcao errada." << endl;
         }
-
-
     } while(!sair);
 
     return 0;

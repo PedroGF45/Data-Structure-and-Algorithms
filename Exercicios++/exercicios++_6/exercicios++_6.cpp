@@ -10,9 +10,9 @@ int main() {
 
     bool sair = false;
     char opcao;
+    int n;
 
     do {
-        int n = askNumber();
 
         cout << "1 - Mostrar tabuada" << endl;
         cout << "0 - Sair" << endl;
@@ -21,6 +21,7 @@ int main() {
 
         switch (opcao) {
             case '1':
+                n = askNumber();
                 tabuada(n);
                 break;
             case '0':
